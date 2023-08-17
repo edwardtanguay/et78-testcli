@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.btn-primary {
+		@apply text-red-500 bg-green-400;
+	}
+}
+
+body {
+	h2 {
+		color: red;
+	}
+}
