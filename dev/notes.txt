@@ -1,6 +1,6 @@
 - x minimize the site
 - x install sass
-- .. make app elemnent variable safe
-	- .. get element with class instead of id
-- install tailwind
+- x make app elemnent variable safe
+	- x get element with class instead of id
+- .. install tailwind
 - 
