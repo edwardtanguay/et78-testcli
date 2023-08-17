@@ -1,1 +1,5 @@
-- minimize the site
+- x minimize the site
+- x install sass
+- make app elemnent variable safe
+- install tailwind
+- 
