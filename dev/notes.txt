@@ -5,6 +5,6 @@
 - x install tailwind
 - x button/event in Vite Vanilla
 - x on button click, get value from input and insert in output
-- .. implement localstorage
+- x implement localstorage
 	- x save value on button click
-	- .. read value on page load
+	- x read value on page load
