@@ -15,15 +15,18 @@ Output: [<span class="output"></span>]
 `;
 
 	const _outputElem = document.querySelector<HTMLSpanElement>('.output');
-	const _btnMainElem = document.querySelector('.btnMain');
+	const _btnMainElem = document.querySelector<HTMLButtonElement>('.btnMain');
+	const _messageElem = document.querySelector<HTMLInputElement>('.message');
 
-	if (_outputElem && _btnMainElem) {
+	if (_outputElem && _btnMainElem && _messageElem) {
 		const outputElem = _outputElem;
 		const btnMainElem = _btnMainElem;
+		const messageElem = _messageElem;
 
 		btnMainElem.addEventListener('click', (e:Event) => {
 			e.preventDefault();
-			outputElem.innerText = 'testing';
+			const message = messageElem.value;
+			outputElem.innerText = message;
 		});
 	}
 

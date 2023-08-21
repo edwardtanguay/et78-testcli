@@ -3,5 +3,5 @@
 - x make app elemnent variable safe
 	- x get element with class instead of id
 - x install tailwind
-- .. button/event in Vite Vanilla
-	-- 
+- x button/event in Vite Vanilla
+- .. on button click, get value from input and insert in output
