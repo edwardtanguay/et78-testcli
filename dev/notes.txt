@@ -2,5 +2,5 @@
 - x install sass
 - x make app elemnent variable safe
 	- x get element with class instead of id
-- .. install tailwind
-- 
+- x install tailwind
+- .. button/event in Vite Vanilla

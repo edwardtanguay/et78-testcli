@@ -3,11 +3,25 @@ import './style.scss';
 const siteElem = document.querySelector('#app')
 
 if (siteElem) {
-  siteElem.innerHTML = `
-<h1 class="text-orange-300 text-4xl">CLI Test</h1>
-<h2>sass</h2>
-<button class="btn-primary">test button</button>
+  siteElem.innerHTML = /*html*/ `
+  <form>
+    <input class="message"/>
+    <button class="btn-primary">Post</button>
+  </form>
+
+  <div>
+Output: [<span class="output"></span>]
+  </div>
 `;
+
+  const _outputElem = document.querySelector('.output');
+  if (_outputElem) {
+    const outputElem = _outputElem;
+    
+    outputElem.innerHTML = 'nnn';
+  }
+
+
 } else {
   alert('sorry')
 }

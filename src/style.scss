@@ -4,12 +4,18 @@
 
 @layer components {
 	.btn-primary {
-		@apply text-red-500 bg-green-400;
+		@apply text-red-500 bg-blue-400;
 	}
 }
 
 body {
 	h2 {
 		color: red;
+	}
+	color: #ccc;
+
+	ul {
+		list-style: disc;
+		margin-left: 2rem;
 	}
 }
