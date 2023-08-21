@@ -1,12 +1,7 @@
 import { getCurrentPage, getMenu } from './Router';
 import './style.scss';
 
-const localStorageMessage = localStorage.getItem('message');
 const siteElem = document.querySelector('#app');
-
-const url = window.location.href;
-console.log(url);
-
 
 if (siteElem) {
 	siteElem.innerHTML = /*html*/ `
@@ -16,16 +11,6 @@ if (siteElem) {
 		${getCurrentPage()}
 	<hr/>
 
-	<h2 class="text-3xl mt-5">Extra code</h2>
-	<form>
-		<input class="message"/>
-		<button class="btnPost btn-primary">Post</button>
-		<button class="btnClear btn-primary">Clear</button>
-	</form>
-
-	<div>
-Output: [<span class="output">${localStorageMessage}</span>]
-	</div>
 `;
 
 	const _outputElem = document.querySelector<HTMLSpanElement>('.output');
