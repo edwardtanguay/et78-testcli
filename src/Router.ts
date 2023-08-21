@@ -1,7 +1,7 @@
 import * as tools from './tools';
 import { PageWelcome } from './pages/PageWelcome';
 import { Page404 } from './pages/Page404';
-import { PageFormExample } from './pages/PageFormExample';
+import { PageFormExample, PageFormExampleAttachEvents } from './pages/PageFormExample';
 
 const pageNames = ['Welcome', 'Form Example'];
 
@@ -15,6 +15,13 @@ export const getCurrentPage = () => {
 			return PageFormExample();
 		default:
 			return Page404();
+	}
+}
+
+export const attachAllEvents = () => {
+	switch (currentPageIdCode) {
+		case 'formexample':
+			PageFormExampleAttachEvents();
 	}
 }
 
