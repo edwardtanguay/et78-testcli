@@ -4,7 +4,7 @@ export const PageFormExample = () => {
 	return /*html*/`
 <div class="page pageFormExample">
 	<form>
-		<input class="message"/>
+		<input class="message text-slate-800"/>
 		<button class="btnPost btn-primary">Post</button>
 		<button class="btnClear btn-primary">Clear</button>
 	</form>

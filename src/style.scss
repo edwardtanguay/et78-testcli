@@ -15,4 +15,20 @@ body {
 		list-style: disc;
 		margin-left: 2rem;
 	}
+
+	a.active {
+		color: yellow;
+	}
+
+	nav {
+		background-color: #444;
+		padding: 1rem;
+		margin-bottom: 1.5rem;
+		ul {
+			display: flex;
+			gap: 1rem;
+			list-style: none;
+			margin-left: .1rem;
+		}
+	}
 }

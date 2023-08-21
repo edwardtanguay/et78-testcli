@@ -5,11 +5,8 @@ const siteElem = document.querySelector('#app');
 
 if (siteElem) {
 	siteElem.innerHTML = /*html*/ `
-	<hr/>
 		${getMenu()}
-	<hr/>
 		${getCurrentPage()}
-	<hr/>
 `;
 
 
