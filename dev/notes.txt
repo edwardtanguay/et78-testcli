@@ -8,5 +8,6 @@
 - x implement localstorage
 	- x save value on button click
 	- x read value on page load
-
-- .. build Router and pages
+- x build Router and pages
+- .. form code to form page
+- style menu and site

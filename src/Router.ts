@@ -1,8 +1,9 @@
 import * as tools from './tools';
 import { PageWelcome } from './pages/PageWelcome';
 import { Page404 } from './pages/Page404';
+import { PageFormExample } from './pages/PageFormExample';
 
-const pageNames = ['Welcome'];
+const pageNames = ['Welcome', 'Form Example'];
 
 const currentPageIdCode = getSmartCurrentPageId();
 
@@ -10,6 +11,8 @@ export const getCurrentPage = () => {
 	switch (currentPageIdCode) {
 		case 'welcome':
 			return PageWelcome();
+		case 'formexample':
+			return PageFormExample();
 		default:
 			return Page404();
 	}
