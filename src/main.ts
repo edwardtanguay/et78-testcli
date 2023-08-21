@@ -8,7 +8,8 @@ if (siteElem) {
 	siteElem.innerHTML = /*html*/ `
 	<form>
 		<input class="message"/>
-		<button class="btnMain btn-primary">Post</button>
+		<button class="btnPost btn-primary">Post</button>
+		<button class="btnClear btn-primary">Clear</button>
 	</form>
 
 	<div>
@@ -17,15 +18,15 @@ Output: [<span class="output">${localStorageMessage}</span>]
 `;
 
 	const _outputElem = document.querySelector<HTMLSpanElement>('.output');
-	const _btnMainElem = document.querySelector<HTMLButtonElement>('.btnMain');
+	const _btnPostElem = document.querySelector<HTMLButtonElement>('.btnPost');
 	const _messageElem = document.querySelector<HTMLInputElement>('.message');
 
-	if (_outputElem && _btnMainElem && _messageElem) {
+	if (_outputElem && _btnPostElem && _messageElem) {
 		const outputElem = _outputElem;
-		const btnMainElem = _btnMainElem;
+		const btnPostElem = _btnPostElem;
 		const messageElem = _messageElem;
 
-		btnMainElem.addEventListener('click', (e:Event) => {
+		btnPostElem.addEventListener('click', (e:Event) => {
 			e.preventDefault();
 			const message = messageElem.value;
 			outputElem.innerText = message;
