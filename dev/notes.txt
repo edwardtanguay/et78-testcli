@@ -9,5 +9,9 @@
 	- x save value on button click
 	- x read value on page load
 - x build Router and pages
-- .. form code to form page
-- style menu and site
+- x form code to form page
+- x style menu and site
+- .. build CLI to create a page
+	- .. when you type "npm run cp" it shows "creating page"
+	
+	 
