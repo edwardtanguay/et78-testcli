@@ -4,4 +4,7 @@
 	- x get element with class instead of id
 - x install tailwind
 - x button/event in Vite Vanilla
-- .. on button click, get value from input and insert in output
+- x on button click, get value from input and insert in output
+- .. implement localstorage
+	- x save value on button click
+	- .. read value on page load

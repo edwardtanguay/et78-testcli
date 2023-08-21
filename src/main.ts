@@ -1,6 +1,8 @@
 import './style.scss';
 
-const siteElem = document.querySelector('#app')
+const localStorageMessage = localStorage.getItem('message');
+const siteElem = document.querySelector('#app');
+
 
 if (siteElem) {
 	siteElem.innerHTML = /*html*/ `
@@ -10,7 +12,7 @@ if (siteElem) {
 	</form>
 
 	<div>
-Output: [<span class="output"></span>]
+Output: [<span class="output">${localStorageMessage}</span>]
 	</div>
 `;
 
@@ -27,6 +29,8 @@ Output: [<span class="output"></span>]
 			e.preventDefault();
 			const message = messageElem.value;
 			outputElem.innerText = message;
+			messageElem.value = '';
+			localStorage.setItem('message', message);
 		});
 	}
 
