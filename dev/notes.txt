@@ -8,3 +8,5 @@
 - x implement localstorage
 	- x save value on button click
 	- x read value on page load
+
+- .. build Router and pages
