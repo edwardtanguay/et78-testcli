@@ -10,6 +10,7 @@ export const PageTodoList = () => {
 `;
 }
 
+
 export const PageTodoListAttachEvents = () => {
 
 	const _btnAddTodoElem = document.querySelector<HTMLButtonElement>('.btnAddTodo');
@@ -23,6 +24,13 @@ export const PageTodoListAttachEvents = () => {
 
 		newTodoElem.focus();
 
+		listElem.addEventListener('click', (e: Event) => {
+			const trashElem = e.target as HTMLSpanElement;
+			const liElem = trashElem.parentElement;
+			liElem?.remove();
+			
+		})
+
 		btnAddTodoElem.addEventListener('click', () => {
 			const newTodo = newTodoElem.value.trim();
 
@@ -33,4 +41,6 @@ export const PageTodoListAttachEvents = () => {
 			}
 		});
 	}
+
+
 }
