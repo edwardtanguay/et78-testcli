@@ -37,6 +37,8 @@ export const PageTodoListAttachEvents = () => {
 				const textElem = elem.previousElementSibling?.previousElementSibling as HTMLElement;
 				const trashcanElem = elem.previousElementSibling as HTMLSpanElement;
 				textElem.style.display = 'none';
+				trashcanElem.style.display = 'none';
+				elem.style.display = 'none';
 
 				// create and insert input element
 				const inputElem = document.createElement('input') as HTMLInputElement;
