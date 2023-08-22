@@ -17,8 +17,8 @@
 	- x create mock event handler to alert "clicked" when clicked
 	- x attach events: when button add click, then add text in input
 		- x on click, add a test li "test li", each time clicked a new one
-	- .. show focus in input on page load and click
-	- .. load FontAwesomes and show a trashcan icon
+	- x show focus in input on page load and click
+	- .. load FontAwesome and show a trashcan icon
 	- .. show trash can next to each todo
 	- .. get value out of input box and add to li when button clicked
 	- create delete button next to each todo item which deletes item

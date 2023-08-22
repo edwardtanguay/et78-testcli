@@ -27,7 +27,7 @@ export const PageTodoListAttachEvents = () => {
 			const newTodo = newTodoElem.value.trim();
 
 			if (newTodo !== '') {
-				listElem.innerHTML += `<li>${newTodo}</li>`;
+				listElem.innerHTML += `<li>${newTodo} <i class="fa fa-trash-o text-red-400" aria-hidden="true"></i></li>`;
 				newTodoElem.value = '';
 				newTodoElem.focus();
 			}
