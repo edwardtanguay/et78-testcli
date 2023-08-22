@@ -49,14 +49,24 @@ export const PageTodoListAttachEvents = () => {
 				liElem.insertBefore(inputElem, trashcanElem);
 
 				// add save button
-				const saveButtonElem = document.createElement('button') as HTMLButtonElement;
-				saveButtonElem.textContent = 'Save';
-				saveButtonElem.className = 'btn-primary';
+				const btnSaveElem = document.createElement('button') as HTMLButtonElement;
+				btnSaveElem.textContent = 'Save';
+				btnSaveElem.className = 'btn-primary';
 				inputElem.style.marginRight = '.2rem';
 				// liElem.insertBefore(saveButtonElem, inputElem.nextSibling);
-				liElem.appendChild(saveButtonElem);
+				liElem.appendChild(btnSaveElem);
 				newTodoElem.disabled = true;
 				btnAddTodoElem.disabled = true;
+				btnSaveElem.addEventListener('click', () => {
+					textElem.innerText = inputElem.value;
+					textElem.style.display = 'initial';
+					inputElem.remove();
+					btnSaveElem.remove();
+					trashcanElem.style.display = 'initial';
+					elem.style.display = 'initial';
+					newTodoElem.disabled = false;
+					btnAddTodoElem.disabled = false;
+				})
 			}
 		})
 
