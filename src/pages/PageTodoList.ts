@@ -33,7 +33,7 @@ export const PageTodoListAttachEvents = () => {
 			}
 			if (elem.className.includes('pencil')) {
 
-				// hide text
+				// hide text and unnecessary icons
 				const textElem = elem.previousElementSibling?.previousElementSibling as HTMLElement;
 				const trashcanElem = elem.previousElementSibling as HTMLSpanElement;
 				textElem.style.display = 'none';
@@ -43,11 +43,18 @@ export const PageTodoListAttachEvents = () => {
 				// create and insert input element
 				const inputElem = document.createElement('input') as HTMLInputElement;
 				inputElem.value = textElem.innerText;
-				inputElem.style.marginRight = '.5rem';
 				setTimeout(() => {
 					inputElem.focus();
 				}, 10);
 				liElem.insertBefore(inputElem, trashcanElem);
+
+				// add save button
+				const saveButtonElem = document.createElement('button') as HTMLButtonElement;
+				saveButtonElem.textContent = 'Save';
+				saveButtonElem.className = 'btn-primary';
+				inputElem.style.marginRight = '.2rem';
+				// liElem.insertBefore(saveButtonElem, inputElem.nextSibling);
+				liElem.appendChild(saveButtonElem)
 			}
 		})
 
