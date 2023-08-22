@@ -42,6 +42,9 @@ export const PageTodoListAttachEvents = () => {
 				const inputElem = document.createElement('input') as HTMLInputElement;
 				inputElem.value = textElem.innerText;
 				inputElem.style.marginRight = '.5rem';
+				setTimeout(() => {
+					inputElem.focus();
+				}, 10);
 				liElem.insertBefore(inputElem, trashcanElem);
 			}
 		})
