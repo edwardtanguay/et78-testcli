@@ -23,10 +23,10 @@
 	- x get value out of input box and add to li when button clicked
 	- x create delete button next to each todo item which deletes item
 		- x delete with parent
-	- .. make pencil icon and when clicked edit todo item
+	- x make pencil icon and when clicked edit todo item
 		- x show pencil icon
 		- x test alert when pencil clicked
-		- .. hide text and insert input with text as value
+		- x hide text and insert input with text as value
 
 
 	- store in localstorage 
