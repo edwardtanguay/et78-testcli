@@ -54,7 +54,9 @@ export const PageTodoListAttachEvents = () => {
 				saveButtonElem.className = 'btn-primary';
 				inputElem.style.marginRight = '.2rem';
 				// liElem.insertBefore(saveButtonElem, inputElem.nextSibling);
-				liElem.appendChild(saveButtonElem)
+				liElem.appendChild(saveButtonElem);
+				newTodoElem.disabled = true;
+				btnAddTodoElem.disabled = true;
 			}
 		})
 

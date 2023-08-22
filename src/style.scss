@@ -35,4 +35,8 @@ body {
 	input {
 		color: black;
 	}
+
+	.btn-primary:disabled {
+		opacity: .3;
+	}
 }
