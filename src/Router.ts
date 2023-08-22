@@ -2,7 +2,7 @@ import * as tools from './tools';
 import { PageWelcome } from './pages/PageWelcome';
 import { Page404 } from './pages/Page404';
 import { PageFormExample, PageFormExampleAttachEvents } from './pages/PageFormExample';
-import { PageTodoList } from './pages/PageTodoList';
+import { PageTodoList, PageTodoListAttachEvents } from './pages/PageTodoList';
 
 const pageNames = ['Welcome', 'Form Example', 'Todo List'];
 
@@ -25,6 +25,10 @@ export const attachAllEvents = () => {
 	switch (currentPageIdCode) {
 		case 'formexample':
 			PageFormExampleAttachEvents();
+			break;
+		case 'todolist':
+			PageTodoListAttachEvents();
+			break;
 	}
 }
 

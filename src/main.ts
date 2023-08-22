@@ -8,8 +8,6 @@ if (siteElem) {
 		${getMenu()}
 		${getCurrentPage()}
 `;
-
-
 	attachAllEvents();
 } else {
 	alert('sorry')

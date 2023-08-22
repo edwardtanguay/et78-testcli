@@ -13,7 +13,8 @@
 - x style menu and site
 - .. create todo list page
 	- x create page in menu etc.
-	- .. create html for page: input, button "Add"
+	- x create html for page: input, button "Add"
+	- .. create mock event handler to alert "clicked" when clicked
 	- attach events: when button add click, then add text in input
 	- create delete button next to each todo item which deletes item
 	- store in localstorage 
