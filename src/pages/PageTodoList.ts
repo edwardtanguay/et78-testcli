@@ -25,17 +25,18 @@ export const PageTodoListAttachEvents = () => {
 		newTodoElem.focus();
 
 		listElem.addEventListener('click', (e: Event) => {
-			const trashElem = e.target as HTMLSpanElement;
-			const liElem = trashElem.parentElement;
-			liElem?.remove();
-			
+			const elem = e.target as HTMLElement;
+			if (elem.className.includes('trashcan')) {
+				const liElem = elem.parentElement;
+				liElem?.remove();
+			}
 		})
 
 		btnAddTodoElem.addEventListener('click', () => {
 			const newTodo = newTodoElem.value.trim();
 
 			if (newTodo !== '') {
-				listElem.innerHTML += `<li>${newTodo} <i class="fa fa-trash-o text-red-400" aria-hidden="true"></i></li>`;
+				listElem.innerHTML += `<li>${newTodo} <i class="trashcan cursor-pointer fa fa-trash-o text-red-400" aria-hidden="true"></i></li>`;
 				newTodoElem.value = '';
 				newTodoElem.focus();
 			}
