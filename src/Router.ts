@@ -2,8 +2,9 @@ import * as tools from './tools';
 import { PageWelcome } from './pages/PageWelcome';
 import { Page404 } from './pages/Page404';
 import { PageFormExample, PageFormExampleAttachEvents } from './pages/PageFormExample';
+import { PageTodoList } from './pages/PageTodoList';
 
-const pageNames = ['Welcome', 'Form Example'];
+const pageNames = ['Welcome', 'Form Example', 'Todo List'];
 
 const currentPageIdCode = getSmartCurrentPageId();
 
@@ -13,6 +14,8 @@ export const getCurrentPage = () => {
 			return PageWelcome();
 		case 'formexample':
 			return PageFormExample();
+		case 'todolist':
+			return PageTodoList();
 		default:
 			return Page404();
 	}
