@@ -12,8 +12,8 @@
 - x form code to form page
 - x style menu and site
 - .. create todo list page
-	- .. create page in menu etc.
-	- create html for page: input, button "Add"
+	- x create page in menu etc.
+	- .. create html for page: input, button "Add"
 	- attach events: when button add click, then add text in input
 	- create delete button next to each todo item which deletes item
 	- store in localstorage 

@@ -2,7 +2,7 @@ export const PageTodoList = () => {
 	return /*html*/`
 <div class="page pageFormExample">
 	<form>
-	<div>todolist</div>
+		<input class="newTodo"/> <button class="btn-primary">Add Todo</button>
 	</form>
 </div>
 `;

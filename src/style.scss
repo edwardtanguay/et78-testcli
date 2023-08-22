@@ -4,7 +4,7 @@
 
 @layer components {
 	.btn-primary {
-		@apply text-red-500 bg-blue-400;
+		@apply text-slate-700 bg-blue-400 p-1 rounded-sm text-[.8rem];
 	}
 }
 
