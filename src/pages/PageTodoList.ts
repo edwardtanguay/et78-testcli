@@ -18,15 +18,18 @@ export const PageTodoListAttachEvents = () => {
 
 	if (_btnAddTodoElem && _listElem && _newTodoElem) {
 		const btnAddTodoElem = _btnAddTodoElem;
+		const listElem = _listElem;
+		const newTodoElem = _newTodoElem;
+
+		newTodoElem.focus();
 
 		btnAddTodoElem.addEventListener('click', () => {
-			const listElem = _listElem;
-			const newTodoElem = _newTodoElem;
 			const newTodo = newTodoElem.value.trim();
 
 			if (newTodo !== '') {
 				listElem.innerHTML += `<li>${newTodo}</li>`;
 				newTodoElem.value = '';
+				newTodoElem.focus();
 			}
 		});
 	}
