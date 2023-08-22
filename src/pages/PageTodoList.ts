@@ -26,9 +26,23 @@ export const PageTodoListAttachEvents = () => {
 
 		listElem.addEventListener('click', (e: Event) => {
 			const elem = e.target as HTMLElement;
+			const liElem = elem.parentElement as HTMLLIElement;
+
 			if (elem.className.includes('trashcan')) {
-				const liElem = elem.parentElement;
 				liElem?.remove();
+			}
+			if (elem.className.includes('pencil')) {
+
+				// hide text
+				const textElem = elem.previousElementSibling?.previousElementSibling as HTMLElement;
+				const trashcanElem = elem.previousElementSibling as HTMLSpanElement;
+				textElem.style.display = 'none';
+
+				// create and insert input element
+				const inputElem = document.createElement('input') as HTMLInputElement;
+				inputElem.value = textElem.innerText;
+				inputElem.style.marginRight = '.5rem';
+				liElem.insertBefore(inputElem, trashcanElem);
 			}
 		})
 
@@ -36,7 +50,7 @@ export const PageTodoListAttachEvents = () => {
 			const newTodo = newTodoElem.value.trim();
 
 			if (newTodo !== '') {
-				listElem.innerHTML += `<li>${newTodo} <i class="trashcan cursor-pointer fa fa-trash-o text-red-400" aria-hidden="true"></i></li>`;
+				listElem.innerHTML += `<li><span>${newTodo}</span> <i class="trashcan cursor-pointer fa fa-trash-o text-red-400" aria-hidden="true"></i> <i class="pencil fa fa-pencil text-green-500 cursor-pointer" aria-hidden="true"></i></li>`;
 				newTodoElem.value = '';
 				newTodoElem.focus();
 			}
