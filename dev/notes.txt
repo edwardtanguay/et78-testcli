@@ -15,8 +15,9 @@
 	- x create page in menu etc.
 	- x create html for page: input, button "Add"
 	- x create mock event handler to alert "clicked" when clicked
-	- .. attach events: when button add click, then add text in input
-		- .. on click, add a test li "test li", each time clicked a new one
+	- x attach events: when button add click, then add text in input
+		- x on click, add a test li "test li", each time clicked a new one
+	- .. get value out of input box and add to li when button clicked
 	- create delete button next to each todo item which deletes item
 	- store in localstorage 
 
