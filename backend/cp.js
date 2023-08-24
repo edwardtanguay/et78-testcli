@@ -22,6 +22,6 @@ if (!pageName) {
 
 		// edit Router.ts file
 		tools.addLineInFile('./src/Router.ts', '@@FIRSTLINE', `import { Page${pageName} } from './pages/Page${pageName}';`);
-
+		tools.changeLineInFile('./src/Router.ts', 'const pageNames = [', ']', `, '${pageName}'`);
 	}
 }
