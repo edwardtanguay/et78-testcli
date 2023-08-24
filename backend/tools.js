@@ -199,3 +199,7 @@ export const changeLineInFile = (pathAndFileName, marker, lineMarker, textToInse
 	const newContent = tools.convertLinesToStringBlock(newLines);
 	tools.createFile(pathAndFileName, newContent);
 };
+
+export const fileExists = (absolutePathAndFileName) => {
+	return fs.existsSync(absolutePathAndFileName);
+}
