@@ -1,3 +1,4 @@
+import { PageReports } from './pages/PageReports';
 import * as tools from './tools';
 import { PageWelcome } from './pages/PageWelcome';
 import { Page404 } from './pages/Page404';
@@ -48,11 +49,11 @@ export const getMenu = () => {
 	}
 
 	return /*html*/`
-	<nav class="menu">
-		<ul>
-			${pageNames.map(pageName => `<li><a href="${getPageIdCode(pageName)}"${getMenuClass(pageName)}>${pageName}</a></li>`).join('')}
-		</ul>
-	</nav>
+<nav class="menu">
+<ul>
+${pageNames.map(pageName => `<li><a href="${getPageIdCode(pageName)}"${getMenuClass(pageName)}>${pageName}</a></li>`).join('')}
+</ul>
+</nav>
 `;
 }
 

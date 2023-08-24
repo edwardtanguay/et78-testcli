@@ -21,7 +21,7 @@ if (!pageName) {
 	}`);
 
 		// edit Router.ts file
-		tools.addLineInFile('./src/Router.ts', '@@FIRSTLINE', '// this is a test comment inserted programatically');
+		tools.addLineInFile('./src/Router.ts', '@@FIRSTLINE', `import { Page${pageName} } from './pages/Page${pageName}';`);
 
 	}
 }
