@@ -11,7 +11,7 @@
 - x build Router and pages
 - x form code to form page
 - x style menu and site
-- .. create todo list page
+- x create todo list page
 	- x create page in menu etc.
 	- x create html for page: input, button "Add"
 	- x create mock event handler to alert "clicked" when clicked
@@ -27,9 +27,12 @@
 		- x show pencil icon
 		- x test alert when pencil clicked
 		- x hide text and insert input with text as value
-- .. build CLI to create a page
+- x build CLI to create a page
 	- x when you type "npm run cp" it shows "creating page"
-	- .. when you type "npm run cp Reports", display as test: "Reports"
+	- x when you type "npm run cp Reports", display as test: "Reports"
+- .. make CLI interactive with Inquirer
+	- make a quick test of Inquirer
+	- if "npm run cp" then ask for file name, then create page
 
 
 
