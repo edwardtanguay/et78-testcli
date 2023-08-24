@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "cp": "node backend/cp.js"
+    "cp": "node backend/cp.js",
+    "sc": "clear && git log --pretty=format:\"%h - %ad - %s (%an)\" -10 --date=format:\"%Y-%m-%d %H:%M:%S\""
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
