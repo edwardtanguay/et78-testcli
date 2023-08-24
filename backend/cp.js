@@ -2,6 +2,7 @@ import * as tools from './tools.js';
 
 const pageName = process.argv[2];
 
+// this was added by StackBlitz
 
 if (!pageName) {
 	console.log('Please run script with a page name, e.g. "npm run cp Reports".');
