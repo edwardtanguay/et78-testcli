@@ -24,6 +24,6 @@ if (!pageName) {
 		const routerPathAndFileName = './src/Router.ts';
 		tools.addLineInFile(routerPathAndFileName, '@@FIRSTLINE', `import { Page${pageName} } from './pages/Page${pageName}';`);
 		tools.changeLineInFile(routerPathAndFileName, 'const pageNames = [', ']', `, '${pageName}'`);
-		tools.addLineInFile(routerPathAndFileName, 'switch (', `case '${pageName.toLowerCase}':\nreturn Page${pageName}();`)
+		tools.addLineInFile(routerPathAndFileName, 'switch (', `case '${pageName.toLowerCase()}':\nreturn Page${pageName}();`)
 	}
 }
