@@ -21,7 +21,9 @@ if (!pageName) {
 	}`);
 
 		// edit Router.ts file
-		tools.addLineInFile('./src/Router.ts', '@@FIRSTLINE', `import { Page${pageName} } from './pages/Page${pageName}';`);
-		tools.changeLineInFile('./src/Router.ts', 'const pageNames = [', ']', `, '${pageName}'`);
+		const routerPathAndFileName = './src/Router.ts';
+		tools.addLineInFile(routerPathAndFileName, '@@FIRSTLINE', `import { Page${pageName} } from './pages/Page${pageName}';`);
+		tools.changeLineInFile(routerPathAndFileName, 'const pageNames = [', ']', `, '${pageName}'`);
+		tools.addLineInFile(routerPathAndFileName, 'switch (', `case '${pageName.toLowerCase}':\nreturn Page${pageName}();`)
 	}
 }

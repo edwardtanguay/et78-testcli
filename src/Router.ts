@@ -1,4 +1,3 @@
-import { PageReports } from './pages/PageReports';
 import * as tools from './tools';
 import { PageWelcome } from './pages/PageWelcome';
 import { Page404 } from './pages/Page404';
