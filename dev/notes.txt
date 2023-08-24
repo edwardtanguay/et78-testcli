@@ -27,12 +27,12 @@
 		- x show pencil icon
 		- x test alert when pencil clicked
 		- x hide text and insert input with text as value
-
-
-	- store in localstorage 
-
-
 - .. build CLI to create a page
 	- x when you type "npm run cp" it shows "creating page"
+	- .. when you type "npm run cp Reports", display as test: "Reports"
+
+
+
+- build in unit testing with vitest on tools.js
 	
 	 
